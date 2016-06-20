@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script1 Assignment</title>
+
+	<script type="text/javascript">
+	function CircArea()
+	{
+	var a= prompt("Enter radius");
+	var pi= 3.14;
+	if(a>0)
+	{
+		document.write(pi*a*a);
+	}
+	else
+	{
+		document.write("Invalid");
+	}
+	}
+	</script>
+</head>
+<body>
+<p> Javascript function to calculate area of circle</p>
+<button onclick="CircArea()" > Area of circle</button>
+<br>
+
+<p>  Current time in format hours:minutes. 
+<script src= "time.js" type="text/javascript">
+	
+</script>
+<br>
+<br>
+<button onclick="caldate()" id="demo" > Click here</button>
+
+<br>
+
+<p> Function to display "Hello World!" </p>
+<p id="para"></p>
+<script type="text/javascript">
+function Hello()
+{
+	document.getElementById('para').innerHTML= "Hello World!";
+}
+</script>
+<button onclick="Hello()"> Hello </button>
+<br>
+
+<p> Min and Max in array of numbers</p>
+<script type="text/javascript">
+	function minmax()
+	{
+		var array= [5,3,1,4,15,9];
+		
+		for(i=0; i<array.length; i++)
+		{
+			document.write(array[i]+ ",");
+		} 
+		
+		document.write("<br>");
+		
+			document.write("Max value is" + Math.max.apply(null, array) );
+			document.write("<br>");
+		   document.write("Minvalue is" + Math.min.apply(null,array) );
+		
+		
+		
+	}
+	
+</script>
+<button onclick="minmax()"> Minmax</button>
+<br>
+
+<p> For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz" and for numbers that are both multiples of three and five print "FizzBuzz" </p>
+<script type="text/javascript">
+	function fiz()
+	{
+		
+		for (i=0; i<=100; i++)
+		{
+			 if (i%3==0 & i%5==0){
+				document.write("FizzBuzz" + "<br>");
+			}
+			else if(i%3==0){
+				document.write("Fizz"+ "<br>");
+			}
+			else if (i%5==0){
+				document.write("Buzz" + "<br>");
+			}
+			
+			else{
+				document.write(i + "<br>");
+			}
+		}
+	}
+</script>
+<button onclick="fiz()"> Iterate</button>
+<br>
+
+
+
+</body>
+</html>
